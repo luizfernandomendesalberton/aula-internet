@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Documento</title>
+</head>
+<body>
+    <h1>formulario</h1>
+    <form action="fomulario.html" method="post">
+       <p>
+        <label for="endereco">endereco</label>
+        <input id="endereco" type="text" name="endereco"  >
+      </p>
+
+      <p>
+        <label for="input-numero">numero</label>
+        <input id="input-numero" type="number" name="numero" placeholder="" min="0" max="100" >
+
+      </p>
+
+      <p>
+        <label for="input-email">email</label>
+        <input id="input-email" type="email" name="email"  placeholder="">
+
+      </p>
+
+      <p>
+        <label for="input-tel">telefone</label>
+        <input id="input-tel" type="tel" name="tel" placeholder="(99) 9999-9999" pattern="/^(?:\+)[0-9]{2}\s?(?:\()[0-9]{2}(?:\))\s?[0-9]{4,5}(?:-)[0-9]{4}$/" >
+
+      </p>
+      <p>
+        <label for="input-busca">busca</label>
+        <input id="input-busca" type="search" name="busca" placeholder="buscar" >
+
+      </p>
+      <p>
+        <label for="input-url">link</label>
+        <input id="input-url" type="url" name="url" placeholder="link" >
+
+      </p>
+      <p>
+        <label for="input-senha">senha</label>
+        <input id="input-senha" type="password" name="senha" placeholder="informe a senha" >
+
+      </p>
+      <p>
+        <label for="input-data">data</label>
+        <input id="input-data" type="date" name="data" placeholder="data" >
+
+      </p>
+      <p>
+        <label for="input-data-hora">data hora</label>
+        <input id="input-data-hora" type="datetime-local" name="data-hora" placeholder="data-hora" >
+
+      </p>
+      <p>
+        <label for="input-hora">hora</label>
+        <input id="input-hora" type="time" name="hora" >
+
+      </p>
+      <p>
+        <label for="input-mes">Mês</label>
+        <input id="input-mes" type="month" name="mês" placeholder="mes" >
+
+      </p>
+      <p>
+        <label for="input-semana">semana</label>
+        <input id="input-semana" type="week" name="semana"  >
+
+      </p>
+
+        <button type="submit">enviar</button>
+    </form>
+</body>
+</html>
