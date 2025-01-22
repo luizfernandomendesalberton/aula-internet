@@ -8,83 +8,116 @@
 <body>
     <h1>formulario</h1>
     <form action="fomulario.html" method="post">
-       <p>
-        <label for="endereco">endereco</label>
-        <input id="endereco" type="text" name="endereco"  >
-      </p>
-
-      <p>
-        <label for="input-numero">numero</label>
-        <input id="input-numero" type="number" name="numero" placeholder="" min="0" max="100" >
-
-      </p>
-
-      <p>
-        <label for="input-email">email</label>
-        <input id="input-email" type="email" name="email"  placeholder="">
-
-      </p>
-
-      <p>
-        <label for="input-tel">telefone</label>
-        <input id="input-tel" type="tel" name="tel" placeholder="(99) 9999-9999" pattern="/^(?:\+)[0-9]{2}\s?(?:\()[0-9]{2}(?:\))\s?[0-9]{4,5}(?:-)[0-9]{4}$/" >
-
-      </p>
-      <p>
-        <label for="input-busca">busca</label>
-        <input id="input-busca" type="search" name="busca" placeholder="buscar" >
-
-      </p>
-      <p>
-        <label for="input-url">link</label>
-        <input id="input-url" type="url" name="url" placeholder="link" >
-
-      </p>
-      <p>
-        <label for="input-senha">senha</label>
-        <input id="input-senha" type="password" name="senha" placeholder="informe a senha" >
-
-      </p>
-      <p>
-        <label for="input-data">data</label>
-        <input id="input-data" type="date" name="data" placeholder="data" >
-
-      </p>
-      <p>
-        <label for="input-data-hora">data hora</label>
-        <input id="input-data-hora" type="datetime-local" name="data-hora" placeholder="data-hora" >
-
-      </p>
-      <p>
-        <label for="input-hora">hora</label>
-        <input id="input-hora" type="time" name="hora" >
-
-      </p>
-      <p>
-        <label for="input-mes">Mês</label>
-        <input id="input-mes" type="month" name="mês" placeholder="mes" >
-
-      </p>
-      <p>
-        <label for="input-semana">semana</label>
-        <input id="input-semana" type="week" name="semana"  >
-
-      </p>
-      <p>
-        <label for="termos">
-        <input id="termos" type="checkbox" name="termos" /> li e aceito os termos de uso
-      </label> 
-      </p>
-      <p>
-        <label for="sim">
-        <input id="sim" type="radio" name="aceito" /> sim
-        </label>
-        <label for="nao">
-          <input id="nao" type="radio" name="aceito" /> nao 
+      <fieldset>
+        <legend>campo de endereços</legend>
+        <p>
+          <label for="endereco">endereco</label>
+          <input id="endereco" type="text" name="endereco" required  >
+        </p>
+        <p>
+          <label for="input-numero">numero</label>
+          <input id="input-numero" type="number" name="numero" placeholder="" min="0" max="100" disabled >
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>dados pessoais</legend>
+        <p>
+          <label for="input-email">email</label>
+          <input id="input-email" type="email" name="email"  placeholder=" seu email" value="meu-luizfernandomendesalberton@gmail.com" readonly>
+        </p>
+        <p>
+          <label for="input-tel">telefone</label>
+          <input id="input-tel" type="tel" name="tel" placeholder="(99) 9999-9999" pattern="/^(?:\+)[0-9]{2}\s?(?:\()[0-9]{2}(?:\))\s?[0-9]{4,5}(?:-)[0-9]{4}$/" >
+        </p>
+        <p>
+          <label for="input-senha">senha</label>
+          <input id="input-senha" type="password" name="senha" placeholder="informe a senha" >
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>calendario</legend>
+        <p>
+          <label for="input-data">data</label>
+          <input id="input-data" type="date" name="data" placeholder="data" >
+        </p>
+        <p>
+          <label for="input-data-hora">data hora</label>
+          <input id="input-data-hora" type="datetime-local" name="data-hora" placeholder="data-hora" >
+        </p>
+        <p>
+          <label for="input-hora">hora</label>
+          <input id="input-hora" type="time" name="hora" >
+        </p>
+        <p>
+          <label for="input-mes">Mês</label>
+          <input id="input-mes" type="month" name="mês" placeholder="mes" >
+        </p>
+        <p>
+          <label for="input-semana">semana</label>
+          <input id="input-semana" type="week" name="semana"  >
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>consultas</legend>
+        <p>
+          <label for="input-busca">busca</label>
+          <input id="input-busca" type="search" name="busca" placeholder="buscar" >
+        </p>
+        <p>
+          <label for="input-url">link</label>
+          <input id="input-url" type="url" name="url" placeholder="link" >
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>botao e cores, caixas de texto</legend>
+        <p>
+          <label for="termos">
+          <input id="termos" type="checkbox" name="termos" /> li e aceito os termos de uso
+        </label> 
+        </p>
+        <p>
+          <label for="sim">
+          <input id="sim" type="radio" name="aceito" /> sim
           </label>
-      </p>
-
-        <button type="submit">enviar</button>
+          <label for="nao">
+            <input id="nao" type="radio" name="aceito" /> nao 
+            </label>
+        </p>
+        <p>
+          <label for="input-cor">cor</label>
+          <input id="input-cor" type="color" name="cor"  > 
+        </p>
+        <p>
+          <label for="input-arquivo">semana</label>
+          <input id="input-arquivo" type="file" name="arquivo" accept=".mp3,.mp4,.png" multiple  >  
+        </p>
+        <p>
+          <label for="input-rege">range</label>
+          <input id="input-rege" type="range" name="rege" min="0" max="20" step="2" >  
+        </p>
+        <p>
+          <input type="hidden" name="protocolo"  value="01234" >
+        </p>
+        <p>
+          <label for="opcoes">Opção</label>
+          <select name="opcoes" id="opcoes" multiple>
+           <option value="1">Opção 1</option>
+           <option value="2">Opção 2</option>
+           <option value="3">Opção 3</option>
+          </select>
+        </p>
+        <p>
+          <label for="opcoes"></label>
+          <textarea name="opcoes" id="mensagem" rows="10"></textarea>
+        </p>
+        <p>
+          <input type="submit" value=" botao de envio" >
+          <input type="reset" value="linpar">
+          <input type="image" src="imagem.png">
+        </p>
+          <button type="submit">enviar</button>
+          <button type="reset">linpar </button>
+      </fieldset>
     </form>
 </body>
 </html>
