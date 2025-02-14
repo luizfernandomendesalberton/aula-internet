@@ -7,6 +7,9 @@
   * herad
   * body
 ### aqui e adicionado onde sera as ediçoes de um HTML <br>
+ * header
+ * main
+ * footer
     
 
  
